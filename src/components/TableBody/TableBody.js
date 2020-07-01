@@ -1,13 +1,13 @@
 import React from 'react';
 
-function TableBody() {
+function TableBody(props) {
     return (
         <tbody>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{props.student.name}</td>
+                <td>{props.student.age}</td>
+                <td>{props.student.sex}</td>
+                <td>{props.student.address}</td>
             </tr>
         </tbody>
     );
